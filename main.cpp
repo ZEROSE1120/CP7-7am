@@ -23,6 +23,8 @@ int main()
     Videogame videojuego4("Super Mario Bros", "nskjha", 2021, 2);
     Videogame videojuego5("Mortal Kombat", "Play Station", 2022, 6);
 
+    videojuego1.showVideoGame();
+
     do
     {
         cout << "--------MENU----------" << endl;
@@ -35,7 +37,13 @@ int main()
         switch (op)
         {
         case 1:
-
+            videojuego1.showVideoGame();
+            break;
+        case 2:
+            videojuego1.setHoursPlayed(15);
+            videojuego1.showVideoGame();
+            videojuego4.setHoursPlayed(12);
+            videojuego4.showVideoGame();
             break;
         case 4:
             break;
