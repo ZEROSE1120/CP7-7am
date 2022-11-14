@@ -12,13 +12,6 @@ private:
 public:
     Videogame();
     Videogame(string, string, int, int);
-    string getTitle();
-    void setTitle(string title);
-    string getPlatform();
-    void setPlatform(string platform);
-    int getYear();
-    void setYear(int year);
-    int getHoursPlayed();
     void setHoursPlayed(int hours);
     void showVideoGame();
 };
@@ -42,4 +35,9 @@ void Videogame::showVideoGame()
     cout << "-> Plataforma: " << platform << endl;
     cout << "-> Anio de publicacion: " << year << endl;
     cout << "-> Horas: " << hoursplayed << endl;
+}
+
+void Videogame::setHoursPlayed(int hours){
+hoursplayed += hours;
+
 }

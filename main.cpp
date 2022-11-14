@@ -39,6 +39,12 @@ int main()
         case 1:
             videojuego1.showVideoGame();
             break;
+        case 2:
+            videojuego1.setHoursPlayed(15);
+            videojuego1.showVideoGame();
+            videojuego4.setHoursPlayed(12);
+            videojuego4.showVideoGame();
+            break;
         case 4:
             break;
         default:
